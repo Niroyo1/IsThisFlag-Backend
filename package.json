@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "tsc"
+    "build": "tsc && mkdir -p dist/src/data && cp src/data/*.json dist/src/data/"
   },
   "dependencies": {
     "@types/mongoose": "^5.11.96",
